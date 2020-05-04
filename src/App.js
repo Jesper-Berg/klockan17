@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Clock from 'react-live-clock';
 import './App.css';
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Clock 
+          format={'HH:mm:ss'}
+          style={{fontSize: '200%'}}
+          ticking={true}/>
         </p>
         <a
           className="App-link"
